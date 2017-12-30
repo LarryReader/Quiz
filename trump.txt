@@ -1,0 +1,32 @@
+Trump Test
+
+ImageView 3 - empty - X - check
+
+In what year (yyyy) was Donald Trump elected? EditText
+
+Was Donald Trump widely viewed as dishonest? Radio Group
+
+What country interfered with the 2017 election? Spinner 
+
+Which groups did the republicans give the largest tax cut to in 2017? checkboxes
+
+Now Democrats are: Switch
+
+Women voters in particular are: Toggle
+
+electionYear
+taxCutForRich
+taxCutForCorps
+trumpHonestYes
+trumpHonestNo
+countryInterfered
+democratsEnthused
+womenVoters
+
+
+
+
+
+
+
+

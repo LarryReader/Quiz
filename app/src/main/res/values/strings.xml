@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="country_interfered">What country helped Trump?</string>
+    <string name="acountry_interfered">Russia</string>
+    <string name="qelection_year">In what year (yyyy) was Donald Trump elected?</string>
+    <string name="aelection_year">2017</string>
+    <string name = "tax_cuts_for">Republicans gave the largest tax cuts to?</string>
+    <string name="chk1">Wealthy individuals</string>
+    <string name="chk2">Corporations</string>
+    <string name="dishonest">Is Trump widely viewed as dishonest?</string>
+    <string name="women">Women voters in particular are:</string>
+
+</resources>

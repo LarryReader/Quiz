@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text_election_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/qelection_year"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_view_tax_cut_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_election_year"
+            android:padding="8dp"
+            android:text="@string/tax_cuts_for" />
+
+        <LinearLayout
+            android:id="@+id/chk_box_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_tax_cut_for"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <CheckBox
+                android:id="@+id/check_box_rich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chk1" />
+
+            <CheckBox
+                android:id="@+id/check_box_corporations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/chk2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_honest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chk_box_horizontal"
+            android:padding="8dp"
+            android:text="@string/dishonest" />
+
+        <RadioGroup
+            android:id="@+id/radio_honest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_honest">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_honest_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/radio_honest_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="No" />
+            </LinearLayout>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/spinner_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_honest"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/country_interfered" />
+
+            <Spinner
+                android:id="@+id/spinner_country_interfered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_honest"
+                android:prompt="@string/country_interfered" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switch_democrats_are"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_horizontal"
+            android:checked="false"
+            android:showText="true"
+            android:text="Now Democratic voters enthusiasm is turned :" />
+
+        <TextView
+            android:id="@+id/text_view_women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_democrats_are"
+            android:text="Now women are leaning" />
+
+        <ToggleButton
+            android:id="@+id/toggle_women_voters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_women"
+            android:textOff="Republican"
+            android:textOn="Democrat" />
+
+        <Button
+            android:id="@+id/button_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toggle_women_voters"
+            android:text="Results" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button_score"
+            android:layout_below="@+id/toggle_women_voters"
+            android:text="Reset" />
+
+        <TextView
+            android:id="@+id/text_view_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz Results"
+            />
+
+    </RelativeLayout>
+</ScrollView>
